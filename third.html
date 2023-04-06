@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kaikki tanssista!</title>
 <style>
     body {
@@ -25,6 +26,30 @@
 
     a:hover {
         color: red;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        padding: 10px;
+        height: 300px;
+    }
+
+    .left {
+        width: 25%;
+    }
+
+    .right {
+        width: 75%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 
 </style>
